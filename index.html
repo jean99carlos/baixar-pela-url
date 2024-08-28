@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baixar Arquivos pelo Link</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-2">
+        <h1 class="my-4">Baixar Arquivos</h1>
+        <p>Cole na caixa abaixo sua lista de URLs e clique em "Adicionar".</p>
+        <div class="form-group">
+            <textarea id="urlInput" class="form-control" placeholder="Cole suas URLs aqui..."></textarea>
+        </div>
+        <button class="btn btn-primary" onclick="addUrls()">Adicionar URLs</button>
+        <button class="btn btn-success" onclick="downloadAll()">Baixar tudo</button>
+
+        <table id="urlTable" class="table table-bordered mt-4">
+            <thead class="thead-light">
+                <tr>
+                    <th>URL</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
